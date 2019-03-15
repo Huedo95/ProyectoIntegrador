@@ -9,14 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Inicio.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Login.SignOffActivity" />
+        <activity android:name=".Login.SignupActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Login.ResetPasswordActivity" />
+        <activity android:name=".Perfil.Perfil" />
+        <activity
+        android:name=".Inicio.ActivityPrinc"
+        android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".Inicio.ActivityContactanos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inicio.ActivityLast"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inicio.ActivityAyuda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inicio.ActivityNosotros"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CrearEventos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        />
+        <activity android:name=".MisEventos"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
     </application>
 
 </manifest>

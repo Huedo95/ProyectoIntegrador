@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:padding="17dp"
+    tools:context=".CrearEventos">
+
+    <ImageView
+        android:id="@+id/imgvFotoEvento"
+        android:layout_width="132dp"
+        android:layout_height="143dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="23dp"
+        android:onClick="OnClick" />
+    app:srcCompat="@drawable/addimage"/>
+
+    <EditText
+        android:id="@+id/etNombreEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgvFotoEvento"
+        android:layout_toEndOf="@+id/imgvFotoEvento"
+        android:layout_toRightOf="@+id/imgvFotoEvento"
+        android:ems="10"
+        android:hint="Nombre del Evento"
+        android:inputType="textPersonName"
+        android:text="@string/et_NombreEvento"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/etUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgvFotoEvento"
+        android:layout_toEndOf="@+id/imgvFotoEvento"
+        android:layout_toRightOf="@+id/imgvFotoEvento"
+        android:ems="10"
+        android:hint="Ubicacion"
+        android:inputType="textPersonName"
+        android:text="@string/et_Ubicacion"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/etDescripcionEvento"
+        android:layout_width="351dp"
+        android:layout_height="191dp"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Texto"
+        android:inputType="textPersonName"
+        android:text="@string/et_DescripcionEvento"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/etFechaInicio"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgvFotoEvento"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgvFotoEvento"
+        android:layout_marginBottom="103dp"
+        android:ems="10"
+        android:hint="Inicio"
+        android:inputType="textPersonName"
+        android:text="@string/et_FechaInicio"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgvFotoEvento"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgvFotoEvento"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btn_CrearEvento"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etDescripcionEvento"
+        android:layout_alignRight="@+id/etDescripcionEvento"
+        android:layout_alignTop="@+id/btnCrear"
+        android:onClick="cancelar"
+        android:text="@string/btn_Cancelar" />
+
+    <EditText
+        android:id="@+id/etFechaFin"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etDescripcionEvento"
+        android:layout_alignRight="@+id/etDescripcionEvento"
+        android:layout_alignTop="@+id/etFechaInicio"
+        android:ems="10"
+        android:hint="Fin"
+        android:inputType="textPersonName"
+        android:text="@string/et_FechaFin" />
+
+    <ProgressBar
+        android:id="@+id/Barra"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp" />
+
+</RelativeLayout>
